@@ -4,7 +4,7 @@ from landing import app
 @app.route("/users/<username>/")
 def profiles_detail(username):
     context = {"user": username}
-    if username == 'jmitchel3':
+    if username == 'dypick':
         context["right_user_msg"] = "Yeah that's right"
     return render_template('profiles_detail.html', context=context)
 

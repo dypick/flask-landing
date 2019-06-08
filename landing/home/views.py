@@ -61,11 +61,11 @@ def success_view():
 
 
 
-# @app.route("/item/<int:id>/", methods=['GET'])
-# def item_detail(id):
-#     # instance = EmailSignup.query.get(id)
-#     instance = EmailSignup.query.filter_by(id=id).first_or_404()
-#     return render_template('items/detail.html', instance=instance)
+@app.route("/item/<int:id>/", methods=['GET'])
+def item_detail(id):
+    # instance = EmailSignup.query.get(id)
+    instance = EmailSignup.query.filter_by(id=id).first_or_404()
+    return render_template('items/detail.html', instance=instance)
 
 
 # @app.route("/item/<int:id>/update/", methods=['GET', 'POST'])

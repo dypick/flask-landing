@@ -1,9 +1,4 @@
-from flask import Flask
-
-app = Flask(__name__)
-
-# url
-# view
+from landing import app
 
 @app.route("/")
 def hello():
